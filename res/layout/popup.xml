@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#444444"
+    android:orientation="vertical"
+    android:padding="10sp" >
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/circle1"
+        android:src="@mipmap/circle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/rectangle"
+        android:src="@mipmap/rectangle"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/circle1" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/triangle"
+        android:src="@mipmap/triangle"
+        android:background="#ffffff"
+        android:layout_below="@+id/circle1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/line"
+        android:src="@mipmap/line"
+        android:background="#ffffff"
+        android:layout_toRightOf="@+id/triangle"
+        android:layout_alignRight="@+id/rectangle"
+        android:layout_alignEnd="@+id/rectangle"
+        android:layout_alignTop="@+id/triangle" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/oval"
+        android:src="@mipmap/oval"
+        android:background="#ffffff"
+        android:layout_below="@+id/triangle" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/polygon"
+        android:src="@mipmap/polygon"
+        android:background="#ffffff"
+        android:layout_alignBottom="@+id/oval"
+        android:layout_toRightOf="@+id/triangle"
+        android:layout_alignRight="@+id/line"
+        android:layout_alignEnd="@+id/line" />
+
+</RelativeLayout>
